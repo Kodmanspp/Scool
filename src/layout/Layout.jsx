@@ -4,7 +4,7 @@ import NavBar from './NavBar/NavBar';
 
 function Layout() {
     return (
-        <div>
+        <div className='min-h-[100vh] min-w-[100vw]'>
             <NavBar/>
             <Outlet/>
         </div>

@@ -1,26 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import logo from "../../static/Logo.svg";
+import { Menu } from "@mui/icons-material";
 function NavBar(props) {
   return (
-    <div className="bg-white-900 w-screen h-20 px-40">
-      <div className="container mx-auto h-full flex justify-between items-center">
-        <Link to="/" className="logo text-3xl">
-          Bokonbaevo
+    <div className="border-b-[1px] border-gray-500 bg-white-900 w-screen h-[70px] px-40 mt:px-10">
+      <div className="container mx-auto h-full gap-x-[100px] flex justify-between items-center">
+        <Link to="/" className=" gap-[10px] flex text-3xl">
+          <img src={logo} alt="logo" />
+          <p>Bokonbaevo</p>
         </Link>
-        <div className="flex items-center w-1/3 justify-between">
-          <Link className="text-2xl color-green-200" to="/">
+        <div className="hidden mb:block"><Menu className="cursor-pointer"/></div>
+        <div className="flex items-center min-w-[400px] w-[500px] gap-[4vw] justify-end mb:hidden">
+          <NavLink className="text-1xl" to="/">
             Главное
-          </Link>
-          <Link className="text-2xl color-green-200" to="/about">
+          </NavLink>
+          <NavLink className="text-1xl" to="/about">
             О нас
-          </Link>
-          <Link className="text-2xl color-green-200" to="/sert">
+          </NavLink>
+          <NavLink className="text-1xl" to="/sert">
             Сертификаты
-          </Link>
-          <Link className="text-2xl color-green-200" to="/more">
+          </NavLink>
+          <NavLink className="text-1xl" to="/more">
             Еще
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>
