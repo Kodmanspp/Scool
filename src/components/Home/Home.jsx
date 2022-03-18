@@ -23,7 +23,7 @@ function Home() {
           </div>
           <div className="justify-self-end">
             <MyCard
-              order={"1"}
+              order={true}
               title="lorem"
               text="lorem ipsum koala kodala mgys orem ipsum koala kodala mgys orem ipsum koala kodala mgys orem ipsum koala kodala mgys orem ipsum koala kodala mgysorem ipsum koala kodala mgysorem ipsum koala kodala mgysorem ipsum koala kodala mgysorem ipsum koala kodala mgys"
             />

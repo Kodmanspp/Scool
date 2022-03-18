@@ -1,9 +1,9 @@
 import React from "react";
 
-function MyCard({ title, text, order = "0" }) {
+function MyCard({ title, text, order }) {
   return (
     <div className="grid grid-cols-2 gap-[20px] mt:block mt:text-center">
-      <div className={`${order !==0 ? "order-1": "order-0"} `}>
+      <div className={`${order ? "order-1": "order-0"} `}>
         <img className="rounded-lg w-full object-cover" src="https://picsum.photos/1920/1080" alt="" />
       </div>
       <div>
