@@ -11,7 +11,7 @@ function NavBar(props) {
           <p>Bokonbaevo</p>
         </Link>
         <div className="hidden mb:block"><Menu className="cursor-pointer"/></div>
-        <div className="flex items-center min-w-[400px] w-[500px] gap-[4vw] justify-end mb:hidden">
+        <div className="flex items-center min-w-[400px] w-[550px] gap-[4vw] justify-end mb:hidden">
           <NavLink className="text-1xl" to="/">
             Главное
           </NavLink>
@@ -21,8 +21,8 @@ function NavBar(props) {
           <NavLink className="text-1xl" to="/sert">
             Сертификаты
           </NavLink>
-          <NavLink className="text-1xl" to="/more">
-            Еще
+          <NavLink className="text-1xl" to="/gallery">
+            Галлерея
           </NavLink>
         </div>
       </div>

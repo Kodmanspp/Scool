@@ -7,7 +7,7 @@ function Layout() {
     return (
         <div className='min-h-[100vh] min-w-[100vw]'>
             <NavBar/>
-            <Outlet/>
+            <div className="min-h-[100vh]"><Outlet/></div>
             <Footer/>
         </div>
     );
